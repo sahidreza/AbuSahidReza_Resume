@@ -357,8 +357,7 @@ export const de: Dictionary = {
     emailLabel: "E-Mail",
     linkedinLabel: "LinkedIn",
     resumeLabel: "Lebenslauf herunterladen",
-    resumeGlobal: "Global / International",
-    resumeIndia: "Indien",
+    resumeButton: "Lebenslauf",
     pdf: "PDF",
     form: {
       title: "Nachricht senden",

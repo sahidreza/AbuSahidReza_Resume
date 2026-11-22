@@ -359,8 +359,7 @@ export const en = {
     emailLabel: "Email",
     linkedinLabel: "LinkedIn",
     resumeLabel: "Download resume",
-    resumeGlobal: "Global / International",
-    resumeIndia: "India",
+    resumeButton: "Resume",
     pdf: "PDF",
     form: {
       title: "Send a message",

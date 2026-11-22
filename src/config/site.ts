@@ -24,11 +24,8 @@ export const siteConfig = {
     height: 1574,
   },
 
-  /** Downloadable resumes. Replace the PDFs in /public/resume to update them. */
-  resumes: {
-    global: "/resume/Abu_Sahid_Reza_Resume_Global.pdf",
-    india: "/resume/Abu_Sahid_Reza_Resume_India.pdf",
-  },
+  /** Downloadable resume, the same file for every country and language. Replace the PDF in /public/resume to update it. */
+  resume: "/resume/Abu_Sahid_Reza_Resume.pdf",
 
   /**
    * Contact form delivery.

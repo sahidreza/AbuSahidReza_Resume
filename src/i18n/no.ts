@@ -358,8 +358,7 @@ export const no: Dictionary = {
     emailLabel: "E-post",
     linkedinLabel: "LinkedIn",
     resumeLabel: "Last ned CV",
-    resumeGlobal: "Global / internasjonal",
-    resumeIndia: "India",
+    resumeButton: "CV",
     pdf: "PDF",
     form: {
       title: "Send en melding",

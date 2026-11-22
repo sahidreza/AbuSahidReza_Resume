@@ -119,23 +119,15 @@ export function Contact() {
             <Reveal delay={0.1}>
               <p className="text-eyebrow text-white/45">{c.resumeLabel}</p>
               <div className="mt-3 flex flex-wrap gap-3">
-                {(
-                  [
-                    [c.resumeGlobal, siteConfig.resumes.global],
-                    [c.resumeIndia, siteConfig.resumes.india],
-                  ] as const
-                ).map(([label, href]) => (
-                  <a
-                    key={href}
-                    href={asset(href)}
-                    download
-                    className="group inline-flex items-center gap-2.5 rounded-full border border-white/20 px-5 py-3 text-[0.92rem] font-medium transition-all duration-300 hover:border-white/50 hover:bg-white/[0.06]"
-                  >
-                    <ArrowDownToLine className="h-4 w-4 transition-transform duration-300 group-hover:translate-y-0.5" strokeWidth={2} aria-hidden="true" />
-                    {label}
-                    <span className="text-[0.7rem] text-white/40">{c.pdf}</span>
-                  </a>
-                ))}
+                <a
+                  href={asset(siteConfig.resume)}
+                  download
+                  className="group inline-flex items-center gap-2.5 rounded-full border border-white/20 px-5 py-3 text-[0.92rem] font-medium transition-all duration-300 hover:border-white/50 hover:bg-white/[0.06]"
+                >
+                  <ArrowDownToLine className="h-4 w-4 transition-transform duration-300 group-hover:translate-y-0.5" strokeWidth={2} aria-hidden="true" />
+                  {c.resumeButton}
+                  <span className="text-[0.7rem] text-white/40">{c.pdf}</span>
+                </a>
               </div>
             </Reveal>
             <Reveal delay={0.15}>
