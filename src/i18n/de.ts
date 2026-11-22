@@ -1,0 +1,388 @@
+import type { Dictionary } from "./en";
+
+export const de: Dictionary = {
+  meta: {
+    title: "Abu Sahid Reza — Technical AI Product Manager",
+    description:
+      "Technical AI Product Manager mit rund 10 Jahren Erfahrung in der Softwareentwicklung, der Engineering-Praxis und Produktführung verbindet. Entwickelte Loominote, eine KI-App für Sprachnotizen mit 1.500 zahlenden Abonnenten, und verantwortet Enterprise-Delivery bei TCS.",
+    ogAlt: "Abu Sahid Reza — Technical AI Product Manager",
+  },
+
+  nav: {
+    skip: "Zum Inhalt springen",
+    about: "Über mich",
+    experience: "Erfahrung",
+    work: "Projekte",
+    expertise: "Expertise",
+    contact: "Kontakt",
+    resume: "Lebenslauf",
+    menu: "Menü öffnen",
+    close: "Menü schließen",
+    language: "Sprache",
+    home: "Abu Sahid Reza — Startseite",
+  },
+
+  hero: {
+    eyebrow: "Technical AI Product Manager · LLM- & Voice-AI-Produkte",
+    titleA: "Intelligente Produkte entwickeln.",
+    titleB: "Wirkung schaffen, die zählt.",
+    sub: "Ich bin Abu Sahid Reza — Technical AI Product Manager mit der Leidenschaft, komplexe Technologie in intelligente, menschenzentrierte Produkte zu verwandeln.",
+    ctaPrimary: "Meine Arbeit entdecken",
+    ctaSecondary: "Kontakt aufnehmen",
+    scroll: "Scrollen",
+    portraitAlt: "Porträt von Abu Sahid Reza",
+    availability: "Offen für Aufgaben weltweit",
+    caption: "Abu Sahid Reza",
+    captionRole: "KI-Produkte · Engineering · Delivery",
+  },
+
+  about: {
+    label: "Über mich",
+    title: "Technologie ist mein Fundament. Produktdenken ist meine Stärke.",
+    lead: "Seit rund zehn Jahren arbeite ich dort, wo Software auf die Menschen trifft, die sich auf sie verlassen. Ich habe als iOS-Entwickler begonnen, bin in die technische Führung hineingewachsen und verantworte heute KI-Produkte von Anfang bis Ende — vom ersten Prompt bis zum ersten zahlenden Kunden.",
+    chaptersTitle: "Mein Weg bisher",
+    chapters: [
+      {
+        year: "2016",
+        title: "Entwickler",
+        text: "Einstieg als iOS-Entwickler: Kundenprodukte ausgeliefert und Anforderungen, Wireframes und Designs auf technische Machbarkeit geprüft.",
+      },
+      {
+        year: "2018",
+        title: "Macher",
+        text: "Mehr als zehn iOS-Apps in Swift, Objective-C, SwiftUI und UIKit konzipiert und entwickelt sowie ein neunköpfiges Android-Team geführt.",
+      },
+      {
+        year: "2021",
+        title: "Lead",
+        text: "Als Module Lead App-Module für die Delta-Air-Lines-App geliefert und das Lösungsdesign für Virgin Atlantic unterstützt.",
+      },
+      {
+        year: "2022",
+        title: "Produkt",
+        text: "Bei TCS Delivery-SPOC für das Programm Ultimatix Reimagine sowie Team Lead und Scrum Master eines iOS-Teams.",
+      },
+      {
+        year: "Heute",
+        title: "KI",
+        text: "Loominote, eine LLM-basierte App für Sprachnotizen, als einziger Produktmanager und Entwickler gebaut und auf den Markt gebracht.",
+      },
+    ],
+    pillars: [
+      {
+        title: "Technische Tiefe",
+        text: "Praktische Softwareerfahrung von Swift und UIKit bis zu Speech-to-Text- und LLM-APIs — damit Produktentscheidungen darauf beruhen, wie Dinge wirklich gebaut werden.",
+      },
+      {
+        title: "Produktgespür",
+        text: "Vision, Roadmaps, PRDs, User Stories und Akzeptanzkriterien — jeweils verknüpft mit Erfolgskennzahlen, die für das Geschäft zählen.",
+      },
+      {
+        title: "Enterprise-Delivery",
+        text: "Ein gemeinsamer Lieferplan für CIO, Leitung der Business Unit, Delivery Head und Product Owner — und konsequent bis zum Release umgesetzt.",
+      },
+    ],
+  },
+
+  experience: {
+    label: "Erfahrung",
+    title: "Eine Laufbahn, aufgebaut auf Code.",
+    sub: "Von der iOS-Entwicklung zur Verantwortung für Enterprise-Delivery und KI-Produkte.",
+    listLabel: "Stationen",
+    jobs: [
+      {
+        id: "tcs",
+        company: "Tata Consultancy Services",
+        short: "TCS",
+        role: "AI Product Manager & Delivery Lead",
+        period: "Aug. 2022 – heute",
+        location: "Kolkata, Indien",
+        summary:
+          "Delivery-SPOC für Ultimatix Reimagine und parallel Team Lead und Scrum Master eines iOS-Teams.",
+        highlights: [
+          "Delivery-SPOC für das Programm Ultimatix Reimagine: CIO, Leitung der Business Unit, Delivery Head und Product Owner auf einen gemeinsamen Lieferplan ausgerichtet.",
+          "423 Arbeitspakete in vier Workstreams geliefert.",
+          "Parallel Team Lead und Scrum Master des iOS-Teams Major Incidents & Communication (MIC): Sprintplanung, Backlog-Refinement, Retrospektiven und Production Support.",
+          "PRDs, User Stories und Akzeptanzkriterien verfasst; Anforderungsworkshops und Change-Impact-Analysen mit Engineering, Design und QA geleitet.",
+          "Regelmäßige Team-Session dazu, wie LLMs, KI-Agenten und APIs funktionieren.",
+        ],
+        tags: ["Product Ownership", "Delivery", "Scrum", "PRDs & Backlog"],
+      },
+      {
+        id: "mindtree",
+        company: "Mindtree (heute LTIMindtree)",
+        short: "Mindtree",
+        role: "Module Lead",
+        period: "Aug. 2021 – Juli 2022",
+        location: "Kolkata, Indien",
+        summary: "Mobile Delivery für internationale Airline-Kunden.",
+        highlights: [
+          "App-Module für die Delta-Air-Lines-App geliefert, die von Millionen Reisenden genutzt wird.",
+          "Anforderungsaufnahme und Lösungsdesign für die digitale Produktsuite von Virgin Atlantic unterstützt.",
+          "Lieferung, Tests und Releases der Komponenten koordiniert, damit Zeitpläne eingehalten wurden.",
+        ],
+        tags: ["Mobile", "Lösungsdesign", "Release-Koordination"],
+      },
+      {
+        id: "genius",
+        company: "Genius Consultants Limited",
+        short: "Genius",
+        role: "iOS-Entwickler",
+        period: "Aug. 2018 – Aug. 2021",
+        location: "Kolkata, Indien",
+        summary: "iOS-Apps entwickelt und ein plattformübergreifendes Team geführt.",
+        highlights: [
+          "Mehr als 10 iOS-Apps in Swift, Objective-C, SwiftUI und UIKit konzipiert und entwickelt.",
+          "Ein neunköpfiges Team geführt, das eine Android-App geliefert hat.",
+          "Discovery und High-Level-Design für mittlere bis große Projekte verantwortet.",
+        ],
+        tags: ["Swift", "SwiftUI", "UIKit", "Teamführung"],
+      },
+      {
+        id: "rplanx",
+        company: "Rplanx Private Limited",
+        short: "Rplanx",
+        role: "iOS-Entwickler",
+        period: "Nov. 2016 – Mai 2018",
+        location: "Kolkata, Indien",
+        summary: "Der Anfang: iOS-Produkte für Kunden.",
+        highlights: [
+          "iOS-Produkte für Kunden termingerecht geliefert, in direkter Abstimmung mit Kunden und Projektmanagern.",
+          "Anforderungen, Wireframes und Designs auf technische Machbarkeit geprüft.",
+        ],
+        tags: ["iOS", "Kundenprojekte"],
+      },
+    ],
+  },
+
+  work: {
+    label: "Ausgewählte Projekte",
+    title: "Produkte mit Geschichte. Ergebnisse mit Zahlen.",
+    problem: "Problem",
+    approach: "Mein Beitrag",
+    quality: "Qualität",
+    result: "Ergebnis",
+    role: "Rolle",
+    loominote: {
+      eyebrow: "Fallstudie 01 · KI-Produkt",
+      name: "Loominote",
+      tagline: "KI, die zuhört.",
+      description:
+        "Eine KI-gestützte App für Sprachnotizen, die Aufnahmen in strukturierte Transkripte, Zusammenfassungen und umsetzbare Erkenntnisse verwandelt.",
+      role: "Produktmanager und alleiniger Entwickler",
+      platformsLabel: "Entwickelt für",
+      platforms: ["iPhone", "Apple Watch", "iPad", "Mac"],
+      stats: [
+        { value: 1500, prefix: "", suffix: "", label: "zahlende Abonnenten" },
+        { value: 25000, prefix: "", suffix: " US$", label: "Nettoumsatz" },
+        { value: 4, prefix: "", suffix: "", label: "Monate bis dahin" },
+      ],
+      modesTitle: "Eine App. Drei Arten zuzuhören.",
+      modesSub: "Jeder Modus hat eigene Prompts, abgestimmt auf den Zweck der Aufnahme.",
+      modes: [
+        {
+          id: "meeting",
+          name: "Meeting",
+          text: "Macht aus einem Meeting ein Transkript, eine Zusammenfassung und die daraus entstandenen Aufgaben.",
+          sample: {
+            title: "Wöchentlicher Produkt-Sync",
+            summary: "Release-Umfang festgelegt, zwei Punkte in den nächsten Sprint verschoben.",
+            items: ["Release-Termin mit QA bestätigen", "Aktualisierte Roadmap teilen", "Onboarding-Texte prüfen"],
+          },
+        },
+        {
+          id: "lecture",
+          name: "Vorlesung",
+          text: "Hält lange Vorträge und Vorlesungen als durchsuchbare Transkripte mit klaren Zusammenfassungen fest.",
+          sample: {
+            title: "Vorlesung 4 · Neuronale Netze",
+            summary: "Wie Schichten Repräsentationen lernen und warum das Training viele Daten braucht.",
+            items: ["Kernidee: geschichtete Repräsentationen", "Nochmal ansehen: Backpropagation", "Lektüre für nächste Woche"],
+          },
+        },
+        {
+          id: "journal",
+          name: "Journal",
+          text: "Verwandelt persönliche Sprachtagebücher in kurze Zusammenfassungen zum Nachlesen.",
+          sample: {
+            title: "Abendliche Reflexion",
+            summary: "Ein konzentrierter Tag. Der Entwurf war früher fertig als geplant.",
+            items: ["Vormittage für Fokusarbeit freihalten", "Am Sonntag zu Hause anrufen", "Das neue Buch anfangen"],
+          },
+        },
+      ],
+      mockLabel: "Beispielhafte Oberfläche",
+      mockTranscript: "Transkript",
+      mockSummary: "Zusammenfassung",
+      mockActions: "Aufgaben",
+      mockRecording: "Aufnahme",
+      pipelineTitle: "So funktioniert es",
+      pipeline: [
+        { title: "Aufnehmen", text: "Auf iPhone, Apple Watch, iPad oder Mac." },
+        { title: "Transkribieren", text: "Echtzeit-Transkription über Speech-to-Text-APIs." },
+        { title: "Verstehen", text: "Zusammenfassungen und Aufgaben über LLM-APIs, mit Prompts je Modus." },
+        { title: "Verbessern", text: "Ein Evaluations-Framework und In-App-Feedback verfeinern die Prompts." },
+      ],
+      problem: "Aufnahmen von Meetings, Vorlesungen und Tagebüchern sind schwer zu durchsuchen und kaum in Handlungen zu überführen.",
+      approach:
+        "Vision und Roadmap definiert; Echtzeit-Transkription, Zusammenfassung und Aufgabenextraktion auf Basis von Speech-to-Text- und LLM-APIs gebaut; die Modi Meeting, Vorlesung und Journal mit jeweils eigenen Prompts ausgeliefert.",
+      quality:
+        "KI-Anbieter nach Transkriptionsgenauigkeit, Qualität der Zusammenfassungen, Latenz, Kosten und Datenschutz ausgewählt; ein Evaluations-Framework für Qualität, Relevanz und Genauigkeit der Zusammenfassungen aufgebaut; In-App-Feedback zur Verbesserung der Prompts genutzt.",
+      result: "1.500 zahlende Abonnenten und 25.000 US$ Nettoumsatz innerhalb von vier Monaten.",
+      appStore: "Im App Store ansehen",
+    },
+    ultimatix: {
+      eyebrow: "Fallstudie 02 · Enterprise-Transformation",
+      name: "Ultimatix Reimagine",
+      tagline: "Unternehmensweiter Wandel, Punkt für Punkt geliefert.",
+      description:
+        "Das Programm zur Neugestaltung von Ultimatix, der Unternehmensplattform, die Hunderttausende TCS-Mitarbeitende nutzen.",
+      role: "AI Product Manager und Delivery-SPOC",
+      stakeholdersLabel: "Ein Plan, vier Stakeholder",
+      planLabel: "Ein gemeinsamer Lieferplan",
+      stakeholders: ["CIO", "Leitung der Business Unit", "Delivery Head", "Product Owner"],
+      totalLabel: "Arbeitspakete in vier Workstreams geliefert",
+      breakdownLabel: "Lieferungen nach Workstream",
+      workstreams: [
+        {
+          name: "E-Mail-Rationalisierung",
+          count: 342,
+          problem: "342 System-E-Mails mit jeweils eigenen Verantwortlichen und Zielgruppen mussten rationalisiert werden.",
+          approach: "Die E-Mails mit den Verantwortlichen geprüft, für jede das Ergebnis vereinbart und die Änderungen in Releases eingeplant.",
+        },
+        {
+          name: "IACT",
+          count: 35,
+          problem: "35 IACT-Punkte mussten innerhalb des Reimagine-Lieferplans abgeschlossen werden.",
+          approach: "Verantwortliche, Abhängigkeiten und Status jedes Punkts verfolgt und Blocker frühzeitig eskaliert.",
+        },
+        {
+          name: "Änderung der Absender-IDs",
+          count: 34,
+          problem: "34 aktive Absender-IDs mussten geändert werden, ohne die Zustellung oder das Vertrauen der Mitarbeitenden in Ultimatix-Mails zu beeinträchtigen.",
+          approach: "Jede Änderung geplant, Releases mit Engineering und QA abgestimmt und jede Änderung über die fachliche Freigabe bis zum Abschluss begleitet.",
+        },
+        {
+          name: "Empfehlungen",
+          count: 12,
+          problem: "Die Reimagine-Stakeholder brauchten Empfehlungen, auf deren Basis sie handeln konnten.",
+          approach: "Jede Empfehlung durch das Stakeholder-Review bis zur entscheidungsreifen Übergabe verantwortet.",
+        },
+      ],
+      mic: {
+        eyebrow: "Parallel · Major Incidents & Communication (MIC)",
+        title: "Qualität, auf die man zählen kann. Wörtlich.",
+        role: "Team Lead und Scrum Master",
+        statLabel: "iOS-Fehler in Produktion über 3 Jahre Releases, vom Product Owner bestätigt.",
+        note: "3 Produktionsfehler im gesamten Team im selben Zeitraum (2 Backend, 1 Android), keiner davon erforderte einen Notfall-Fix.",
+      },
+    },
+  },
+
+  expertise: {
+    label: "Expertise",
+    title: "Wo Engineering auf Produktführung trifft.",
+    groups: [
+      {
+        name: "KI & Produkt",
+        items: [
+          "KI-Produktstrategie",
+          "LLM-Integration",
+          "Prompt Engineering",
+          "KI-Evaluation",
+          "KI-Agenten",
+          "Produkt-Roadmaps",
+          "Product Discovery",
+          "Produktanalyse",
+        ],
+      },
+      {
+        name: "Technologie",
+        items: ["Swift", "SwiftUI", "UIKit", "iOS-Entwicklung", "REST-APIs", "Speech-to-Text-APIs", "LLM-APIs"],
+      },
+      {
+        name: "Führung",
+        items: [
+          "Product Ownership",
+          "Stakeholder-Management",
+          "Agile Delivery",
+          "Scrum",
+          "Bereichsübergreifende Führung",
+          "Enterprise-Programmmanagement",
+        ],
+      },
+    ],
+  },
+
+  achievements: {
+    label: "Wirkung",
+    title: "Die Zahlen hinter der Arbeit.",
+    items: [
+      { value: 10, prefix: "", suffix: "+", label: "Jahre", detail: "Erfahrung in Software und Produkt" },
+      { value: 1500, prefix: "", suffix: "", label: "Abonnenten", detail: "Zahlende Loominote-Abonnenten" },
+      { value: 25000, prefix: "", suffix: " US$", label: "Umsatz", detail: "Nettoumsatz in vier Monaten" },
+      { value: 423, prefix: "", suffix: "", label: "Geliefert", detail: "Enterprise-Arbeitspakete" },
+      { value: 0, prefix: "", suffix: "", label: "Fehler", detail: "iOS-Fehler in Produktion über drei Jahre" },
+    ],
+  },
+
+  education: {
+    label: "Ausbildung & Weiterbildung",
+    title: "Immer am Lernen. Gerade jetzt.",
+    degreeLabel: "Ausbildung",
+    degree: "B.Tech. in Computer Science and Engineering (Informatik)",
+    school: "Calcutta Institute of Engineering and Management",
+    place: "Kolkata, Indien",
+    year: "2015",
+    certsLabel: "Zertifizierungen",
+    completed: "Abgeschlossen",
+    inProgress: "In Arbeit",
+    certs: [
+      { name: "Claude 101", issuer: "Anthropic", status: "completed" },
+      { name: "Claude Certified Associate – Foundations", issuer: "Anthropic", status: "inProgress" },
+      { name: "Claude-Code-Zertifizierung", issuer: "Anthropic", status: "inProgress" },
+    ],
+    learningLabel: "Kontinuierliches Lernen in KI",
+    learning: "Neben Zertifizierungen leite ich bei TCS eine regelmäßige Team-Session dazu, wie LLMs, KI-Agenten und APIs funktionieren.",
+    languagesLabel: "Sprachen",
+    languages: ["Englisch", "Deutsch · A1–A2, im Lernen"],
+  },
+
+  contact: {
+    label: "Kontakt",
+    title: "Eine spannende Herausforderung? Lassen Sie uns etwas Sinnvolles bauen.",
+    sub: "Offen für Aufgaben und Zusammenarbeit weltweit — in KI-Produktführung, Produktmanagement und Enterprise-Programmen.",
+    availabilityLabel: "Verfügbarkeit",
+    availability: "Offen für internationale Positionen — remote, hybrid oder mit Umzug.",
+    emailLabel: "E-Mail",
+    linkedinLabel: "LinkedIn",
+    resumeLabel: "Lebenslauf herunterladen",
+    resumeGlobal: "Global / International",
+    resumeIndia: "Indien",
+    pdf: "PDF",
+    form: {
+      title: "Nachricht senden",
+      name: "Name",
+      email: "E-Mail",
+      company: "Unternehmen",
+      optional: "optional",
+      message: "Nachricht",
+      placeholder: "Erzählen Sie mir von der Position, dem Produkt oder der Herausforderung.",
+      send: "Nachricht senden",
+      sending: "Wird gesendet …",
+      success: "Vielen Dank. Ihre Nachricht ist unterwegs, ich melde mich in Kürze.",
+      mailtoSuccess: "Ihr E-Mail-Programm sollte sich jetzt mit der vorbereiteten Nachricht geöffnet haben.",
+      error: "Etwas ist schiefgelaufen. Bitte schreiben Sie mir direkt per E-Mail.",
+      required: "Bitte füllen Sie dieses Feld aus.",
+      invalidEmail: "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+      privacy: "Ihre Angaben werden ausschließlich für meine Antwort verwendet.",
+      subject: "Hallo über Ihre Website",
+    },
+  },
+
+  footer: {
+    tagline: "Technical AI Product Manager",
+    rights: "Alle Rechte vorbehalten.",
+    top: "Nach oben",
+  },
+};

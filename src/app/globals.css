@@ -1,0 +1,225 @@
+@import "tailwindcss";
+
+/* ───────────────────────── Design tokens ───────────────────────── */
+@theme {
+  --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", var(--font-inter), "Inter",
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+  --color-ink: #1d1d1f;
+  --color-ink-soft: #424245;
+  --color-graphite: #6e6e73;
+  --color-silver: #a1a1a6;
+  --color-mist: #f5f5f7;
+  --color-paper: #ffffff;
+  --color-night: #000000;
+  --color-carbon: #111113;
+  --color-coal: #1c1c1e;
+  --color-accent: #0062e0;
+  --color-accent-bright: #4da3ff;
+
+  --ease-apple: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-soft: cubic-bezier(0.4, 0, 0.2, 1);
+
+  --animate-drift-a: drift-a 22s ease-in-out infinite alternate;
+  --animate-drift-b: drift-b 28s ease-in-out infinite alternate;
+  --animate-marquee: marquee 60s linear infinite;
+  --animate-marquee-reverse: marquee 70s linear infinite reverse;
+  --animate-wave: wave 1.2s ease-in-out infinite;
+  --animate-scroll-dot: scroll-dot 2s var(--ease-soft) infinite;
+}
+
+@keyframes drift-a {
+  from { transform: translate3d(-6%, -4%, 0) scale(1); }
+  to   { transform: translate3d(8%, 6%, 0) scale(1.15); }
+}
+@keyframes drift-b {
+  from { transform: translate3d(6%, 4%, 0) scale(1.1); }
+  to   { transform: translate3d(-8%, -6%, 0) scale(0.95); }
+}
+@keyframes marquee {
+  from { transform: translate3d(0, 0, 0); }
+  to   { transform: translate3d(-50%, 0, 0); }
+}
+@keyframes wave {
+  0%, 100% { transform: scaleY(0.35); }
+  50%      { transform: scaleY(1); }
+}
+@keyframes scroll-dot {
+  0%   { transform: translateY(0); opacity: 0; }
+  30%  { opacity: 1; }
+  80%  { transform: translateY(12px); opacity: 0; }
+  100% { transform: translateY(12px); opacity: 0; }
+}
+
+/* ───────────────────────── Base ───────────────────────── */
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: var(--color-night);
+    color-scheme: light;
+  }
+  body {
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-feature-settings: "kern", "liga", "calt";
+    overflow-x: clip;
+  }
+  ::selection {
+    background: rgba(0, 98, 224, 0.18);
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-accent-bright);
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+  [id] {
+    scroll-margin-top: 48px;
+  }
+}
+
+/* Lenis smooth scrolling */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis:not(.lenis-autoToggle).lenis-stopped {
+  overflow: clip;
+}
+.lenis [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+/* ───────────────────────── Typography helpers ───────────────────────── */
+@utility text-display {
+  font-size: clamp(2.6rem, 7.2vw, 6.75rem);
+  line-height: 1.02;
+  letter-spacing: -0.045em;
+  font-weight: 700;
+}
+@utility text-headline {
+  font-size: clamp(2.1rem, 5vw, 4.5rem);
+  line-height: 1.05;
+  letter-spacing: -0.035em;
+  font-weight: 700;
+}
+@utility text-title {
+  font-size: clamp(1.6rem, 3vw, 2.5rem);
+  line-height: 1.12;
+  letter-spacing: -0.025em;
+  font-weight: 650;
+}
+@utility text-eyebrow {
+  font-size: 0.8125rem;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+  font-weight: 600;
+}
+@utility text-lead {
+  font-size: clamp(1.15rem, 1.7vw, 1.4rem);
+  line-height: 1.5;
+  letter-spacing: -0.012em;
+}
+@utility container-site {
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+  @media (width >= 48rem) {
+    padding-inline: 2.5rem;
+  }
+}
+@utility section-pad {
+  padding-block: clamp(5.5rem, 12vw, 10rem);
+}
+@utility text-gradient-dark {
+  background: linear-gradient(180deg, #ffffff 0%, #a1a1a6 120%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* ───────────────────────── Page loader (pure CSS, so it can never block the page) ───────────────────────── */
+.loader {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: grid;
+  place-items: center;
+  background: var(--color-night);
+  color: #fff;
+  pointer-events: none;
+  animation: loader-out 0.6s var(--ease-soft) 1s forwards;
+}
+.loader__mark {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  opacity: 0;
+  animation: loader-mark 0.9s var(--ease-apple) 0.05s forwards;
+}
+.loader__name {
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+.loader__bar {
+  width: 120px;
+  height: 2px;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.14);
+  overflow: hidden;
+}
+.loader__bar::after {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  transform-origin: left;
+  transform: scaleX(0);
+  animation: loader-bar 0.9s var(--ease-apple) 0.1s forwards;
+}
+@keyframes loader-mark {
+  from { opacity: 0; transform: translateY(8px); filter: blur(6px); }
+  to   { opacity: 1; transform: none; filter: blur(0); }
+}
+@keyframes loader-bar {
+  to { transform: scaleX(1); }
+}
+@keyframes loader-out {
+  to { opacity: 0; visibility: hidden; }
+}
+
+/* ───────────────────────── Reduced motion ───────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .loader {
+    display: none;
+  }
+}
+
+/* ───────────────────────── Hero portrait mask ───────────────────────── */
+.hero-portrait-mask {
+  -webkit-mask-image: linear-gradient(to bottom, #000 30%, rgba(0, 0, 0, 0.55) 62%, transparent 96%);
+  mask-image: linear-gradient(to bottom, #000 30%, rgba(0, 0, 0, 0.55) 62%, transparent 96%);
+}
+@media (min-width: 1024px) {
+  .hero-portrait-mask {
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.6) 30%, #000 58%), linear-gradient(to bottom, #000 70%, transparent 100%);
+    -webkit-mask-composite: source-in;
+    mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.6) 30%, #000 58%), linear-gradient(to bottom, #000 70%, transparent 100%);
+    mask-composite: intersect;
+  }
+}
