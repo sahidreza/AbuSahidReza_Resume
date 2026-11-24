@@ -1,0 +1,11 @@
+# Netlify builds the Next.js static export and serves ./out at https://abureza.netlify.app
+[build]
+  command = "npm run build"
+  publish = "out"
+
+[build.environment]
+  NODE_VERSION = "22"
+  NEXT_TELEMETRY_DISABLED = "1"
+  NEXT_PUBLIC_SITE_URL = "https://abureza.netlify.app"
+  # Served from the domain root, so no base path.
+  NEXT_PUBLIC_BASE_PATH = ""
